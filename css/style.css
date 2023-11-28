@@ -1,0 +1,102 @@
+/*----------------Initialisation--------------------*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+     }
+    *,
+    *:before,
+    *:after {
+    box-sizing: inherit;
+    }
+/*-------------------------------------------------*/
+body {
+    display: flex;
+    /* on défini la direction de l'axe principal comme étant vertical */
+    flex-direction: column;
+   /* width: 100vw; */
+}
+
+/*.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+   
+}*/
+
+/* les conteneurs div autour de chaque section */
+.global {
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    min-width: 100%;
+    min-height: 100vh;
+    /* border: 1px solid #aaa; */
+}
+
+.global section,
+.global header,
+.global footer {
+    display: flex;
+    flex: 0 1 1000px;
+    /* border: 1px solid #aaa; */
+    background-color: rgba(0, 0, 0, .1);
+}
+
+#entete {
+    background-color: rgb(68, 0, 255);
+    min-height: 1vh;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#entete header {
+    justify-content: space-between;
+    align-items: center;
+    /* permet de definir le referentiel pour le menu */
+    position: relative;
+}
+
+#menu {
+    background-color: aqua;
+}
+
+#accueil {
+    background-color: rgb(255, 0, 72);
+}
+
+#inscription {
+    background-color: violet;
+}
+
+#tableau {
+    background-color: rgb(94, 255, 0);
+}
+
+#articles {
+    background-color: rgb(251, 255, 0);
+}
+
+#galerie {
+    background-color: rgb(255, 85, 0);
+}
+
+#video {
+    background-color: rgb(81, 78, 103);
+}
+
+#piedpage {
+    background-color: rgb(255, 0, 212);
+}
+
+h1{
+
+}
+
+h2{
+    margin-top: 10vh;
+}
