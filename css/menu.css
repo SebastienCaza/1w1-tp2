@@ -60,6 +60,11 @@
 #chk_burger:checked ~ #burger {
     transform: rotate(90deg);
 }
+/* Permet de controler l'apparence du bouton burger deux possibilités:
+    ouvrir ou fermer
+    ouvrir: les trois barres horizontales apparait
+    fermer: le X apparait
+    */
 
 #chk_burger:checked ~ #burger img:nth-of-type(2){
     display: block; /* active le x*/
