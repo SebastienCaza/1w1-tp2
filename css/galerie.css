@@ -1,18 +1,70 @@
+/*
+<figure class="galerie">
+        <figure class="galerie__figure">
+            <img class="galerie__img" src="images/maison_01.avif" alt="">
+            <figcaption class="galerie__figcaption"></figcaption>
+        </figure>
+        <figure class="galerie__figure">
+            <img class="galerie__img" src="images/maison_02.jpg" alt="">
+            <figcaption class="galerie__figcaption"></figcaption>
+        </figure>
+        <figure class="galerie__figure">
+            <img class="galerie__img" src="images/maison_03.jpg" alt="">
+            <figcaption class="galerie__figcaption"></figcaption>
+        </figure>
+        <figure class="galerie__figure">
+            <img class="galerie__img" src="images/maison_04.jpg" alt="">
+            <figcaption class="galerie__figcaption"></figcaption>
+    </figure>
+
+</figure>
+*/
+
 /* Conteneur principal */
 
 .galerie {
-
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: flex-start;
+    align-items: start;
+    align-content: flex-start;
+    
 }
 /* Conteneur d'image */
 
 .galerie__figure {
-
+    width: 200px;
+    position: relative;
+    /* border: 1px solid #aaa; */
+    transform: scale(1);
+    transition: all .5s;
 }
 
 /* image */
 
 .galerie__img {
+    
+    width: 100%;
+   /* filter: grayscale(100%); */
+  /* filter: hue-rotate(170deg); */
+   filter: blur(2px) grayscale(100%);
+  
+  
+    
+    
+}
 
+.galerie__img:hover {
+    z-index: 10;
+    filter: none;
+    transform: scale(2);
+    transition: all .5s;
+}
+
+.galerie__img:hover  .galerie__img {
+    filter: none;
 }
 
 /* figcaption */

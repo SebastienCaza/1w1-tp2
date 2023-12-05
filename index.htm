@@ -6,6 +6,8 @@
     <title>TP2</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/galerie.css">
+    <link rel="stylesheet" href="css/formulaire.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,7 +15,7 @@
     <!-- section entete -->
          <div class="global" id="entete">
             <header>
-                <h1>TP2</h1>
+                <h2>TP2</h2>
                 <h4>Mise en page Web</h4>
                 <input type="checkbox" id="chk_burger">
                 <!-- création d'un bouton avec la balise label pour trouver des icones pratiques : https://svgbox.net/ --> 
@@ -44,74 +46,95 @@
          <!-- section menu -->
          <div class="global" id="menu">
             <section>
-                <h1>Menu</h1>
+                <h2>Menu</h2>
             </section>
         </div>
         <!-- ///////////////////////////////////////// -->
         <!-- section accueil -->
         <div class="global" id="accueil">
             <section>
-                <h1>Accueil</h1>
+                <h2>Accueil</h2>
             </section>
         </div>
         <!-- ///////////////////////////////////////// -->
         <!-- section inscription -->
         <div class="global" id="inscription">
             <section>
-                <h1>Inscription</h1>
+                <h2>Inscription</h2>
+                <form action="" class="formulaire">
+                    <label class="etiquette__nom" for="input__nom">Nom</label>
+                    <input type="text" id="input__nom" placeholder="Votre nom de famille">
+                    <label class="etiquette__prenom" for="input__prenom">Prénom</label>
+                    <input type="text" id="input__prenom" placeholder="Votre prénom">
+                    <label class="etiquette__tel" for="input__tel">Téléphone</label>
+                    <input type="text" id="input__tel" placeholder="Votre numéro de téléphone">
+                    <fieldset class="form__chk">
+                        <legend>Les languages que vous maîtrisez</legend>
+                        <label for="input__html" class="etiquette__html">HTML/CSS</label>
+                        <input type="checkbox" id="input__html">
+                        <label for="input__js" class="etiquette__js">JS</label>
+                        <input type="checkbox" id="input__js">
+                        <label for="input__php" class="etiquette__php">PHP</label>
+                        <input type="checkbox" id="input__php">
+                        <label for="input__sql" class="etiquette__sql">SQL</label>
+                        <input type="checkbox" id="input__sql">
+                    </fieldset>
+                </form>
             </section>
         </div>
         <!-- ///////////////////////////////////////// -->
         <!-- section tableau -->
         <div class="global" id="tableau">
             <section>
-                <h1>Tableau</h1>
+                <h2>Tableau</h2>
             </section>
         </div>
         <!-- ///////////////////////////////////////// -->
         <!-- section articles -->
         <div class="global" id="articles">
             <section>
-                <h1>Articles</h1>
+                <h2>Articles</h2>
             </section>
         </div>
         <!-- ///////////////////////////////////////// -->
         <!-- section galerie -->
         <div class="global" id="galerie">
             <section>
-                <h1>Galerie</h1>
-            </section>
-            <figure class="galerie__figure">
+            <h2>Galerie</h2>
             <figure class="galerie">
-                <img class="galerie__img" src="" alt="">
+            <figure class="galerie__figure">
+                <img class="galerie__img" src="images/maison_01.avif" alt="">
                 <figcaption class="galerie__figcaption"></figcaption>
             </figure>
-            <figure>
-                <img src="" alt="">
-                <figcaption></figcaption>
+            <figure class="galerie__figure">
+                <img class="galerie__img" src="images/maison_02.jpg" alt="">
+                <figcaption class="galerie__figcaption"></figcaption>
             </figure>
-            <figure>
-                <img src="" alt="">
-                <figcaption></figcaption>
+            <figure class="galerie__figure">
+                <img class="galerie__img" src="images/maison_03.jpg" alt="">
+                <figcaption class="galerie__figcaption"></figcaption>
             </figure>
-            <figure>
-                <img src="" alt="">
-                <figcaption></figcaption>
+            <figure class="galerie__figure">
+                <img class="galerie__img" src="images/maison_04.jpg" alt="">
+                <figcaption class="galerie__figcaption"></figcaption>
             </figure>
+
             </figure>
+            
+        </section>
         </div>
         <!-- ///////////////////////////////////////// -->
         <!-- section vidéo -->
         <div class="global" id="video">
             <section>
-                <h1>Vidéo</h1>
+                <h2>Vidéo</h2>
             </section>
         </div>
         <!-- ///////////////////////////////////////// -->
         <!-- section pied de page -->
         <div class="global" id="piedpage">
             <section>
-                <h1>Pied de page</h1>
+                <h2>Pied de page</h2>
             </section>
         </div>
 </body>
